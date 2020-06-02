@@ -14,6 +14,8 @@
 * {box-sizing: border-box;}
 
 .grid-item {
+  position: relative;
+  text-align: center;
   background-color: rgba(255, 255, 255, 0.8);
   border: 5px solid rgba(0, 0, 0, 0.8);
   border-radius: 5px;
@@ -21,14 +23,24 @@
   font-size: 30px;
   text-align: center;
 }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 </style>
 
   </head>
   <body>
     General Reading
   <div class="grid-container">
-      <div class=" grid-item"><img src="../assets/plateBack.png"></img>Past Mind</div>
-      <div class=" grid-item ">Present Mind</div>
+      <div class=" grid-item ">
+          <img src="../assets/plateBack.png" alt="Plate Back" style="width:80%">
+          <div class="centered">Past Mind</div>
+      </div>
       <div class=" grid-item ">Future Mind</div>
       <div class=" grid-item ">Others Think</div>
 

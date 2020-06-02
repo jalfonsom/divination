@@ -7,6 +7,11 @@
   <meta name="J. Alfonso Maldonado" content="Divination Applacation">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+  
+.container  {
+  display: grid;}
+  grid-template-rows: 20% 50%; 
+}
 span.plate {
       width: 100px;
       height: 200px;
@@ -26,10 +31,12 @@ body {text-align: center;}
 </head>
 
 <body>
-  <h2>Divination Plates</h2>
-  <p>Pick the type of reading you want</p>
-  <div> <a href="layouts/general.html"><span class="plate"><h2>General Reading</h2></span></a>
+  <div class="container">
+      <h2>Divination Plates</h2>
+      <p>Pick the type of reading you want</p>
+      <div> <a href="layouts/general.html"><span class="plate"><h2>General Reading</h2></span></a>
         <a href="layouts/lhv.html"><span class="plate"><h2>Love, Health and Vocation Reading</h2></span></a>
-    </div>
+      </div>
+  </div>
 </body>
 </html>

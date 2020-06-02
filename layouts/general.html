@@ -4,8 +4,8 @@
     <style>
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-row: 300px 300px 300px 30;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-row: 300px 300px 300px 300px;
   border-radius: 5px;
   background-color: #000000;
   padding: 20px;
@@ -22,6 +22,10 @@
   padding: 20px;
   font-size: 30px;
   text-align: center;
+}
+.threeColumn {
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 .centered {
@@ -54,9 +58,7 @@
       <div class=" grid-item ">Future Gut</div>
       <div class=" grid-item ">Love Life</div>
   
-      <div class=" grid-item"></div>
-      <div class=" grid-item"></div>
-      <div class=" grid-item"></div>
+      <div class=" grid-item threeColumn"></div>
       <div class=" grid-item ">Final Outcome</div> 
   </div>
   </body>

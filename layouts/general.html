@@ -8,7 +8,7 @@
   grid-template-rows: 25% 25% 25% 25%;
   border-radius: 5px;
   background-color: #000000;
-  padding: 10px;
+  padding: 5px;
 }
 
 * {box-sizing: border-box;}
@@ -16,12 +16,15 @@
 .grid-item {
   position: relative;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 5px solid rgba(0, 0, 0, 0.8);
+  background-color: #000000;
+  border: 3px solid #ffffff;
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px;
   font-size: 30px;
   text-align: center;
+}
+.gridItemBlank  {
+  background-color: #000000;
 }
 .threeColumn {
   grid-column-start: 1;
@@ -48,22 +51,22 @@
       </div>
       <div class="grid-item">Present Mind</div>
       <div class=" grid-item ">Future Mind</div>
-      <div class="grid-item"></div>
+      <div class="gridItemBlank"></div>
       <div class=" grid-item ">Others Think</div>
 
       <div class=" grid-item ">Past Heart</div>
       <div class=" grid-item ">Present Heart</div>
       <div class=" grid-item ">Future Heart</div>
-      <div class="grid-item"></div>
+      <div class="gridItemBlank"></div>
       <div class=" grid-item ">You Think</div>
 
       <div class=" grid-item ">Past Gut</div>
       <div class=" grid-item ">Present Gut</div>
       <div class=" grid-item ">Future Gut</div>
-      <div class="grid-item"></div>
+      <div class="gridItemBlank"></div>
       <div class=" grid-item ">Love Life</div>
   
-      <div class=" grid-item threeColumn"></div>
+      <div class=" gridItemBlank threeColumn"></div>
       <div class=" grid-item ">Final Outcome</div> 
   </div>
   </body>

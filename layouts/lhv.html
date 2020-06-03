@@ -12,10 +12,10 @@
 .health   {grid-area: 1/2/3/4; justify-content: center; display: block; margin: auto; position: relative;}
 .vocation {grid-area: 3/1/5/3; justify-content: center; display: block; margin: auto; position: relative;}
 .love     {grid-area: 3/3/5/5; justify-content: center; display: block; margin: auto; position: relative;}
-.others   {grid-area: 1/5/2/6; justify-content: center;}
-.you      {grid-area: 2/5/3/6; justify-content: center;}
-.friends  {grid-area: 3/5/4/6; justify-content: center;}
-.final    {grid-area: 4/5/5/6; justify-content: center;}
+.others   {grid-area: 1/5/2/6; justify-content: center; position: relative;}
+.you      {grid-area: 2/5/3/6; justify-content: center; position: relative;}
+.friends  {grid-area: 3/5/4/6; justify-content: center; position: relative;}
+.final    {grid-area: 4/5/5/6; justify-content: center; position: relative;}
     
 .main {position: relative; top: 0; left: 50%; z-index:2}
 .feel {position: relative; top: 0; left: 0; transform: rotate(90deg); z-index: 1;}
@@ -25,10 +25,18 @@
   color: #FFFFFF;
   text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
   top: 50%;
-  left: 50%;
+  left: 75%;
   transform: translate(-50%, -50%);
   z-index: 3;
-}  
+}
+.sidecentered  {
+  position: absolute;
+  color: #FFFFFF;
+  text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
   </style>
   </head>
   
@@ -59,21 +67,21 @@
 <!--Right Side Plates-->
       <div class="others">
         <img src="../assets/plateBack.png" alt="Plate Back" style="height:90%">
-        <div class="centered">Others Think
+        <div class="sidecentered">Others Think
         </div>
       <div class="you">
         <img src="../assets/plateBack.png" alt="Plate Back" style="height:90%">
-        <div class="centered">You Think
+        <div class="sidecentered">You Think
         </div>
       </div>
       <div class="friends">
         <img src="../assets/plateBack.png" alt="Plate Back" style="height:90%">
-        <div class="centered">Friends & Family Think
+        <div class="sidecentered">Friends & Family Think
         </div>  
       </div>
       <div class="final">
         <img src="../assets/plateBack.png" alt="Plate Back" style="height:90%">
-        <div class="centered">Final Outcome
+        <div class="sidecentered">Final Outcome
         </div>
       </div>
   </body>

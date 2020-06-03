@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <style>
+.container  {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 15% 15% 15% 15%;
+}
+.health   {grid-area: 1/2/3/4;}
+.vocation {grid-area: 3/1/5/3;}
+.love     {grid-area: 3/3/5/5;}
+.others   {grid-area: 1/5/2/6;}
+.you      {grid-area: 2/5/3/6;}
+.friends  {grid-area: 3/5/4/6;}
+.final    {grid-area: 4/5/5/6;}
+  </style>
   </head>
   <body>
     Love, Health and Vocation Reading
     <button type="button" onclick="window.location.href='../index.html';">Return Home
     </button>
+  <div class="container">
+      <div class="health">
+      <img src="../assets/plateBack.png" alt="Plate Back" style="height:100%">
+      </div>
+      <div class="vocation">
+      <img src="../assets/plateBack.png" alt="Plate Back" style="height:100%">
+      </div>
+      <div class="love">
+      <img src="../assets/plateBack.png" alt="Plate Back" style="height:100%">
+      </div>
+      <div class="others">
+      <img src="../assets/plateBack.png" alt="Plate Back" style="height:100%">
+      </div>
+      <div class="you">
+      <img src="../assets/plateBack.png" alt="Plate Back" style="height:100%">
+      </div>
+      <div class="friends">
+      <img src="../assets/plateBack.png" alt="Plate Back" style="height:100%">
+      </div>
+      <div class="final">
+      <img src="../assets/plateBack.png" alt="Plate Back" style="height:100%">
+      </div>
   </body>
 </html>

@@ -7,6 +7,7 @@
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 15% 15% 15% 15%;
   justify-content: center;
+  background-color: #321B56;
 }
 .health   {grid-area: 1/2/3/4; justify-content: center; display: block; margin: auto; position: relative;}
 .vocation {grid-area: 3/1/5/3; justify-content: center; display: block; margin: auto; position: relative;}
@@ -18,8 +19,17 @@
     
 .main {position: relative; top: 0; left: 50%; z-index:2}
 .feel {position: relative; top: 0; left: 0; transform: rotate(90deg); z-index: 1;}
+.centered {
+  position: absolute;
+  color: #FFFFFF;
+  text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}  
   </style>
   </head>
+  
   <body>
     Love, Health and Vocation Reading
     <button type="button" onclick="window.location.href='../index.html';">Return Home
@@ -28,26 +38,39 @@
       <div class="health">
         <img class="main" src="../assets/plateBack.png" alt="Plate Back" style="height:90%">
         <img class="feel" src="../assets/plateBack.png" alt="Plate Back" style="height:90%">
+        <div class="centered">HEALTH
+        </div>
       </div>
       <div class="vocation">
         <img class="main" src="../assets/plateBack.png" alt="Plate Back" style="height:90%">
         <img class="feel" src="../assets/plateBack.png" alt="Plate Back" style="height:90%">
+        <div class="centered">VOCATION
+        </div>
       </div>
       <div class="love">
         <img class="main" src="../assets/plateBack.png" alt="Plate Back" style="height:90%">
         <img class="feel" src="../assets/plateBack.png" alt="Plate Back" style="height:90%">
+        <div class="centered">LOVE
+        </div>
       </div>
       <div class="others">
-      <img src="../assets/plateBack.png" alt="Plate Back" style="height:90%">Others Think of You
-      </div>
+        <img src="../assets/plateBack.png" alt="Plate Back" style="height:90%">
+        <div class"centered">Others Think
+        </div>
       <div class="you">
-      <img src="../assets/plateBack.png" alt="Plate Back" style="height:90%">You Think of Yourself
+        <img src="../assets/plateBack.png" alt="Plate Back" style="height:90%">
+        <div class="centered">Others Think
+        </div>
       </div>
       <div class="friends">
-      <img src="../assets/plateBack.png" alt="Plate Back" style="height:90%">Friends & Family Think of You
+        <img src="../assets/plateBack.png" alt="Plate Back" style="height:90%">
+        <div class="centered">Friends & Family Think
+        </div>  
       </div>
       <div class="final">
-      <img src="../assets/plateBack.png" alt="Plate Back" style="height:90%">Final Outcome
+        <img src="../assets/plateBack.png" alt="Plate Back" style="height:90%">
+        <div class="centered">Final Outcome
+        </div>
       </div>
   </body>
 </html>

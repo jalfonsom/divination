@@ -22,14 +22,14 @@ centerBar {
   animation: shuffle 3s linear 0s 1 forwards;
 }
 sideBar1  {
-  width:20%;
+  width:10%;
   height: 100%;
-  background-color: yellow;
+  background-color: orange;
   position:absolute;
   top: 0px;
   left: 100px;
   z-index: 1;
-  animation: shuffle 3s linear 0s 1 forwards;
+  animation: shuffle1 3s linear 0s 1 forwards;
   }
 
 @keyframes shuffle {
@@ -38,9 +38,11 @@ sideBar1  {
   to    {left: 100%} 
         {width: 0px}
 }
-@keframes shuffle1 {
-  from  {left: 0%}
+@keyframes shuffle1 {
+  from  {left: 25%}
+        {width: 10%}
   to    {left: 100%}
+        {width: 0%}
 }
 @keyframes backgroundshuffle  {
   from  {width: 100%}

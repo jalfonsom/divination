@@ -42,13 +42,74 @@ body  {
   text-align: center;
   font-size: 20px;
 }
-</style>
+
+/* code for shuffle function */
+div.background  {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  animation: backgroundshuffle 4s ease-in-out 0s 1 forwards;
+}
+centerBar {
+  width:50px;
+  height: 100%;
+  background-color: yellow;
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  animation: shuffle 4s ease-in-out 0s 1 forwards;
+}
+sideBar1  {
+  width:100px;
+  height: 100%;
+  background-color: maroon;
+  position:absolute;
+  top: 0px;
+  left: 100px;
+  z-index: 1;
+  animation: shuffle1 4s ease-in-out 0s 1 forwards;
+  }
+@keyframes shuffle {
+  0%      {left: 0%; width: 100px; background-color: black;}
+  25%     {background-color: gray;}
+  50%     {background-color: black;}
+  75%     {background-color: gray;}
+  100%    {left: 100%; width: 0px; background-color: white;}
+}
+@keyframes shuffle1 {
+  0%      {left: 5%; width: 100px; background-color:blue;}
+  25%     {background-color: magenta;}
+  50%     {background-color: purple;}
+  75%     {background-color: violet;}
+  100%    {left: 100%; width: 0px; background-color: white;}
+}
+@keyframes backgroundshuffle  {
+  0%    {width: 100%; background-color: maroon;}
+  50%   {background-color: red;}
+  75%   {background-color: pink;}
+  100%  {width: 0%; background-color: white;}
+}
+#shuffle  {
+    </style>
 
   </head>
+<!--code to run shuffle sript-->
+<script>
+  function shuffle()  {
+    <div class="background"></div>
+    <sideBar1></sideBar1>
+    <centerBar></centerBar>
+  }
+</script>  
   <body>
-    General Reading<br> 
-<button type="button" onclick="window.location.href='../index.html';">Return Home
-</button>
+    <div id="shuffle"></div>
+     General Reading<br> 
+    <button type="button" onclick="window.location.href='../index.html';">Return Home</button>
+    <button type="button" onclick="shuffle()">SHUFFLE</button>
   <div class="grid-container">
 <!--First Row-->
       <div class=" grid-item ">

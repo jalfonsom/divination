@@ -9,7 +9,7 @@ div.background  {
   width: 100%;
   height: 100%;
   background-color: red;
-  animation: backgroundshuffle 3s linear 0s 1 none;
+  animation: backgroundshuffle 3s linear 0s 1 forwards;
 }
 centerBar {
   width:50px;
@@ -19,7 +19,7 @@ centerBar {
   top: 0px;
   left: 0px;
   z-index: 1;
-  animation: shuffle 3s linear 0s 1 none;
+  animation: shuffle 3s linear 0s 1 forwards;
 }
 sideBar1  {
   width:50px;
@@ -29,7 +29,7 @@ sideBar1  {
   top: 0px;
   left: 50px;
   z-index: 1;
-  animation: shuffle 3s linear 0s 1 none;
+  animation: shuffle 3s linear 0s 1 forwards;
   }
 
 @keyframes shuffle {
@@ -44,12 +44,9 @@ sideBar1  {
 </style>
 </head>
 <body> 
-  <div class="background">did the background size change?
-    <centerBar> this will be animated
-    </centerBar>
-    <sideBar1>
-    </sideBar1>
-  </div>
+  <div class="background">did the background size change?</div>
+    <centerBar> this will be animated</centerBar>
+    <sideBar1>Will the animation need to be adjusted?</sideBar1>
 <body>
 </body>
 </html>

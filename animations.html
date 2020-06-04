@@ -24,7 +24,7 @@ centerBar {
 sideBar1  {
   width:50px;
   height: 100%;
-  background-color: pink;
+  background-color: blue;
   position:absolute;
   top: 0px;
   left: 50px;
@@ -33,12 +33,12 @@ sideBar1  {
   }
 
 @keyframes shuffle {
-  from  {left: 0%}
-  to    {left: 100%}
+  from  {left: 0%; width: 100%;}
+  to    {left: 100%; width: 0%;}
 }
 @keframes shuffle1 {
-  from  {left: 50px}
-  to    {left: 100%}
+  from  {left: 10%; width: 100%;}
+  to    {left: 100% width: 0%;}
 }
 @keyframes backgroundshuffle  {
   from  {width: 100%}

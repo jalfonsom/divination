@@ -2,7 +2,7 @@
 <html>
 <head>
 <style>
-background  {
+div.background  {
   background-color: hsl(0, 100%, 100%);
 }
 centerBar {
@@ -10,17 +10,18 @@ centerBar {
   height: 100%;
   background-color: hsl (120, 100%, 100%);
   position:absolute;
+  top: 0px;
+  left: 0px;
   z-index: 1;
 }
 
 </style>
 </head>
 <body> 
-  <div>hello</div>
-  <background>
+  <div class="background">hello
     <centerBar>
     </centerBar>
-  </background>
+  </div>
 <body>
 </body>
 </html>

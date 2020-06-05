@@ -4,7 +4,6 @@
     <style>
 .grid-container {
   display: grid;
-  position: relative;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 15% 15% 15% 15%;
   border-radius: 5px;
@@ -44,17 +43,12 @@ body  {
   font-size: 20px;
 }
       /* shuffle styles */
-#container { 
-  position: relative;
-  background: yellow;
-}
 #animate {
   width: 1px;
-  height: 500px;
+  height: 100%;
   position: absolute;
   background-color: blue;
   right: 0px;
-  z-index: 1;
 }
     </style>
 
@@ -62,19 +56,18 @@ body  {
    <body>
 <!--shuffle sript-->
 <script>
-  function shuffle() {
+function shuffle() {
   var elem = document.getElementById("animate");   
   var pos = 100;
   var id = setInterval(frame, 20);
-  
-    function frame() {
-        if (pos == 0) {
+  function frame() {
+    if (pos == 0) {
         clearInterval(id);
         } 
         else {
         pos--; 
         elem.style.width = pos + "%";  
-     }
+        }
   }
 }
 </script>

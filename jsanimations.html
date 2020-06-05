@@ -3,14 +3,12 @@
 <head>
 <style>
 #container {
-  width: 500px;
-  height: 500px;
   position: relative;
   background: yellow;
 }
 #animate {
-  width: 100px;
-  height: 100px;
+  width: 1px;
+  height: 100%;
   position: absolute;
   background-color: blue;
   right: 0px;
@@ -28,7 +26,7 @@
 function myMove() {
   var elem = document.getElementById("animate");   
   var pos = 100;
-  var id = setInterval(frame, 5);
+  var id = setInterval(frame, 20);
   
     function frame() {
         if (pos == 0) {

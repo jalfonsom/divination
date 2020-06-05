@@ -4,6 +4,8 @@
   <style>
 .container  {
   display: grid;
+  width: 100%;
+  height: 42vw;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 15% 15% 15% 15%;
   justify-content: center;
@@ -11,20 +13,21 @@
   padding: 25px;
   z-index:0;
 }
-.health   {grid-area: 1/2/3/4; display: block; margin: auto; position: relative;}
-.vocation {grid-area: 3/1/5/3; display: block; margin: auto; position: relative;}
-.love     {grid-area: 3/3/5/5; display: block; margin: auto; position: relative;}
-.others   {grid-area: 1/5/2/6; display: block; margin: auto; position: relative; 
+* {box-sizing: border-box;}
+.health   {grid-area: 1/2/3/4; display: block; margin: auto; position: relative; z-index:1;}
+.vocation {grid-area: 3/1/5/3; display: block; margin: auto; position: relative; z-index:1;}
+.love     {grid-area: 3/3/5/5; display: block; margin: auto; position: relative; z-index:1;}
+.others   {grid-area: 1/5/2/6; display: block; margin: auto; position: relative; z-index:1; 
             text-align:center; padding:50px;}
-.you      {grid-area: 2/5/3/6; display: block; margin: auto; position: relative;
+.you      {grid-area: 2/5/3/6; display: block; margin: auto; position: relative; z-index:1;
             text-align:center; padding:50px;}
-.friends  {grid-area: 3/5/4/6; display: block; margin: auto; position: relative;
+.friends  {grid-area: 3/5/4/6; display: block; margin: auto; position: relative; z-index:1;
             text-align:center; padding:50px;}
-.final    {grid-area: 4/5/5/6; display: block; margin: auto; position: relative;
+.final    {grid-area: 4/5/5/6; display: block; margin: auto; position: relative; z-index:1;
             text-align:center; padding:50px;}
     
-.main {position: relative; top: 0; left: 50%; z-index:2}
-.feel {position: relative; top: 0; left: 0; transform: rotate(90deg); z-index: 1;}
+.main {position: relative; top: 0; left: 50%; z-index:3}
+.feel {position: relative; top: 0; left: 0; transform: rotate(90deg); z-index: 2;}
 
 .centered {
   position: absolute;

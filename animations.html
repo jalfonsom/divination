@@ -2,15 +2,14 @@
 <html>
 <head>
 <style>
-div.background  {
+#background  {
   position: absolute;
   top: 0;
   right: 0;
   width: 100%;
   height: 100%;
   background-color: red;
-  visibility: hidden;
-  animation: backgroundshuffle 4s ease-in-out 0s 1 forwards;
+  animation: backgroundshuffle 4s ease-in-out 0s 1;
 }
 centerBar {
   width:50px;
@@ -57,7 +56,8 @@ sideBar1  {
 </style>
 </head>
 <body>
-  <input type="button" value="SHUFFLE" onclick="document.getElementById('p1').style.visibility='visible'">
+  <input type="button" value="HIDE BACKGROUND" onclick="document.getElementById('p1').style.visibility='hidden'">
+  <input type="button" value="SHUFFLE" onclick="document.getElementById('background').style.visibility='visible'">
   <div class="background"></div>
     <sideBar1></sideBar1>
     <centerBar></centerBar>

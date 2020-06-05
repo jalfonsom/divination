@@ -55,7 +55,7 @@ div.background  {
   width: 100%;
   height: 100%;
   background-color: red;
-  animation: backgroundshuffle 4s ease-in-out 0s 1 forwards;
+  animation: backgroundshuffle 2s ease-in-out 0s 1 forwards;
   z-index: 5;
 }
 centerBar {
@@ -66,7 +66,7 @@ centerBar {
   top: 0px;
   left: 0px;
   z-index: 6;
-  animation: shuffle 4s ease-in-out 0s 1 forwards;
+  animation: shuffle 2s ease-in-out 0s 1 forwards;
 }
 sideBar1  {
   width:100px;
@@ -76,14 +76,14 @@ sideBar1  {
   top: 0px;
   left: 100px;
   z-index: 7;
-  animation: shuffle1 4s ease-in-out 0s 1 forwards;
+  animation: shuffle1 2s ease-in-out 0s 1 forwards;
   }
 
 @keyframes shuffle {
   0%      {left: 0%; width: 100px; background-color: black;}
-  25%     {background-color: gray;}
+  25%     {background-color: #333333;}
   50%     {background-color: black;}
-  75%     {background-color: gray;}
+  75%     {background-color: #333333;}
   100%    {left: 100%; width: 0px; background-color: white;}
 }
 @keyframes shuffle1 {

@@ -8,6 +8,7 @@
   grid-template-rows: 15% 15% 15% 15%;
   background-color: #000000;
   padding: 5px;
+  z-index: 0;
 }
 
 * {box-sizing: border-box;}
@@ -54,6 +55,7 @@ div.background  {
   height: 100%;
   background-color: red;
   animation: backgroundshuffle 4s ease-in-out 0s 1 forwards;
+  z-index: 5;
 }
 centerBar {
   width:50px;
@@ -100,12 +102,12 @@ sideBar1  {
 
   </head>
    <body>
-<!--shuffle button-->
 
-    
      General Reading<br> 
-    <button type="button" onclick="window.location.href='../index.html';">Return Home</button>
+    <input type="button" value="SHUFFLE" onclick="location.reload()">
+<button type="button" onclick="window.location.href='../index.html';">Return Home</button>
 <!--First Row-->
+<div class="grid-container>      
       <div class=" grid-item ">
           <img src="../assets/plateBack.png" alt="Plate Back" style="height: 100%">
           <div class="centered">Past Mind
@@ -180,7 +182,7 @@ sideBar1  {
       </div>
 </div>
 <div class="background"></div>
-    <input type="button" value="SHUFFLE" onclick="location.reload()">
+    
     <sideBar1></sideBar1>
     <centerBar></centerBar>
   </body>

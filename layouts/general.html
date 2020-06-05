@@ -42,69 +42,42 @@ body  {
   text-align: center;
   font-size: 20px;
 }
-/* code for shuffle function */
-#shuffle  {
-div.background  {
+      /* shuffle styles */
+#container { 
+  position: relative;
+  background: yellow;
+}
+#animate {
+  width: 1px;
+  height: 500px;
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: red;
-  animation: backgroundshuffle 4s ease-in-out 0s 1 forwards;
-}
-centerBar {
-  width:50px;
-  height: 100%;
-  background-color: yellow;
-  position:absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 1;
-  animation: shuffle 4s ease-in-out 0s 1 forwards;
-}
-sideBar1  {
-  width:100px;
-  height: 100%;
-  background-color: maroon;
-  position:absolute;
-  top: 0px;
-  left: 100px;
-  z-index: 1;
-  animation: shuffle1 4s ease-in-out 0s 1 forwards;
-  }
-@keyframes shuffle {
-  0%      {left: 0%; width: 100px; background-color: black;}
-  25%     {background-color: gray;}
-  50%     {background-color: black;}
-  75%     {background-color: gray;}
-  100%    {left: 100%; width: 0px; background-color: white;}
-}
-@keyframes shuffle1 {
-  0%      {left: 5%; width: 100px; background-color:blue;}
-  25%     {background-color: magenta;}
-  50%     {background-color: purple;}
-  75%     {background-color: violet;}
-  100%    {left: 100%; width: 0px; background-color: white;}
-}
-@keyframes backgroundshuffle  {
-  0%    {width: 100%; background-color: maroon;}
-  50%   {background-color: red;}
-  75%   {background-color: pink;}
-  100%  {width: 0%; background-color: white;}
-}
+  background-color: blue;
+  right: 0px;
 }
     </style>
 
   </head>
-<!--code to run shuffle sript-->
+   <body>
+<!--shuffle sript-->
 <script>
-  function shuffle()  {
-document.getElementbyId("shuffle"}.innerHTML ="";
+  function shuffle() {
+  var elem = document.getElementById("animate");   
+  var pos = 100;
+  var id = setInterval(frame, 20);
+  
+    function frame() {
+        if (pos == 0) {
+        clearInterval(id);
+        } 
+        else {
+        pos--; 
+        elem.style.width = pos + "%";  
+     }
+  }
 }
-</script>  
-  <body>
-    <div id="shuffle"></div>
+</script>
+
+    <div id="animate"></div>
      General Reading<br> 
     <button type="button" onclick="window.location.href='../index.html';">Return Home</button>
     <button type="button" onclick="shuffle()">SHUFFLE</button>

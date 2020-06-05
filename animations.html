@@ -2,7 +2,7 @@
 <html>
 <head>
 <style>
-#div.background  {
+div.background  {
   position: absolute;
   top: 0;
   right: 0;
@@ -57,7 +57,7 @@ sideBar1  {
 </head>
 <body>
   <input type="button" value="HIDE BACKGROUND" onclick="document.getElementById('div.background').style.visibility='hidden'">
-  <input type="button" value="SHUFFLE" onclick="document.getElementById('div.background').style.visibility='visible'">
+  <input type="button" value="SHUFFLE" onclick="document.reload()">
   <div class="background"></div>
     <sideBar1></sideBar1>
     <centerBar></centerBar>

@@ -46,12 +46,13 @@
       font-size: 20px;
 }
 .plate:hover  {
-  animation: liveborder 1s infinite;
+  animation: liveborder 2s infinite;
 }
 @keyframes liveborder {
-  0%  {border-top: red; border:right: orange;}
-  50% {border-top: yellow; border-right: green;}
-  100% {border-top: green; border-right: blue;}
+  0%  {border-color: red orange yellow brown; }
+  25% {border-color: brown red orange yellow;}
+  50% {border-color: yellow brown red orange;}
+  100% {border-color: orange yellow brown red;}
   }
 a:link {
       text-decoration: none;

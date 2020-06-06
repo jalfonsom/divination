@@ -66,8 +66,8 @@ Test #4
   <script>
 function myFunction() {
   document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
-  document.getElementById("demo").style.transform = "0";
-  
+  var declaration = document.styleSheets[0].cssRules[0].style;
+  var removedvalue = declaration.removeProperty("transform");
 }
 </script>
 </body>

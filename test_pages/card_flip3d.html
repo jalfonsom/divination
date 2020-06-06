@@ -50,13 +50,10 @@ body {
 </head>
 <body>
 
-<h1>Card Flip with Text</h1>
-<h3>Hover over the image below:</h3>
-
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="../assets/plateBack.png" alt="plateback" style="width:300px;height:300px;">
+      <img id="demo" onclick="myFunction()" src="../assets/plateBack.png" alt="plateback" style="width:300px;height:300px;">
     </div>
     <div class="flip-card-back">
       <h1>Moon</h1> 
@@ -66,5 +63,10 @@ body {
   </div>
 </div>
 
+  <script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+}
+</script>
 </body>
 </html>

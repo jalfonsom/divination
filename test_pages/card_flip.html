@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.maincontainer  {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: green;
+}
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  background: yellow;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.front  {
+  position: absolute;
+  width: 100%;
+  height:100%;
+  backface-visibility: hidden;
+  background: red;
+  color: maroon;
+}
+.back  {
+  position: absolute;
+  width: 100%;
+  height:100%;
+  backface-visibility: hidden;
+  background: blue;
+  color: teal;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+<div ="maincontainer"></div>
+<div ="card"> </div>
+<div ="front">font of card </div>
+<div ="back">BACK OF CARD </div>
+</body>
+</html>

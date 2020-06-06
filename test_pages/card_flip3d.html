@@ -6,7 +6,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -49,7 +48,7 @@ body {
 </style>
 </head>
 <body>
-Test #10
+Test #100
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -65,8 +64,8 @@ Test #10
 
   <script>
 function myFunction() {
-  document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
-  var declaration = document.styleSheets[3].cssRules[0].style;
+  <!--document.getElementById("demo").innerHTML = "YOU CLICKED ME!";-->
+  var declaration = document.styleSheets[0].cssRules[0].style;
   var removedvalue = declaration.removeProperty("transform");
 }
 </script>

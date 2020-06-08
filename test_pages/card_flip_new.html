@@ -14,7 +14,7 @@ body {
   height: 2225.25px;
   margin: 0;
   float: left;
-  perspective: 500px;
+  perspective: 300px;
 }
 .content {
   position: absolute;
@@ -26,7 +26,7 @@ body {
 }
 .card:hover .content {
   transform: rotateX( 180deg ) ;
-  transition: transform 0.5s;
+  transition: transform 1s;
 }
 .front {
   position: absolute;
@@ -42,18 +42,18 @@ body {
 }
 .back {
   position: absolute;
-  height: 150px;
-  width: 200px;
+  height: 225px;
+  width: 150px;
   background: white;
   line-height: 12px;
   color: #03446A;
   text-align: center;
-  font-size: 60px;
+  font-size: 12px;
   border-radius: 5px;
   backface-visibility: hidden;
   background: url("../assets/plateFrontSprite.png") 0 0;
   color: white;
-  transform: rotateX( -180deg );
+  transform: rotateX( 180deg );
 }
     </style>
   </head>

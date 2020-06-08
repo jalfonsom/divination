@@ -57,23 +57,22 @@ Test #1C
       <img src="../assets/plateBack.png" alt="plateback" style="width:150px;height:200px;">
     </div>
     <div class="flip-card-back" id="demo" onclick="myFunction()">
-    <img src="..assets/plateFrontSprite.png" alt="wild" style="width: 150px; height:200px;">
+    <img src="../assets/plateFrontSprite.png" alt="wild" style="width: 150px; height:200px;">
     </div>
   </div>
 </div>
-  <div id="image"> a new test</div>
+  <div id="image"> another test</div>
   <script>
-function myFunction() {
+<!--function myFunction() {
     var img = document.createElement('img');
     img.src = "../assets/plateFrontSprite.png";
     document.getElementById("image").appendChild(img);
-}
-  <!--
+}//-->
 function myFunction() {
-  document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+  document.getElementById("demo").innerHTML = "YOU";
   var declaration = document.styleSheets[0].cssRules[0].style;
   var removedvalue = declaration.removeProperty("transform");
-}//-->
+}
 </script>
 </body>
 </html>

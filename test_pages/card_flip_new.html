@@ -8,11 +8,11 @@ body {
 }
 .card {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   width: 150px;
-  height: 200px;
-  margin: auto;
+  height: 2225.25px;
+  margin: 0;
   float: left;
   perspective: 500px;
 }
@@ -25,15 +25,15 @@ body {
   transform-style: preserve-3d;
 }
 .card:hover .content {
-  transform: rotateY( 180deg ) ;
+  transform: rotateX( 180deg ) ;
   transition: transform 0.5s;
 }
 .front {
   position: absolute;
-  height: 200px;
+  height: 225px;
   width: 150px;
   background: url("../assets/plateBack.png");
-  line-height: 300px;
+  line-height: 12px;
   color: #03446A;
   text-align: center;
   font-size: 60px;
@@ -45,7 +45,7 @@ body {
   height: 150px;
   width: 200px;
   background: white;
-  line-height: 300px;
+  line-height: 12px;
   color: #03446A;
   text-align: center;
   font-size: 60px;
@@ -53,19 +53,17 @@ body {
   backface-visibility: hidden;
   background: url("../assets/plateFrontSprite.png") 0 0;
   color: white;
-  transform: rotateY( 180deg );
+  transform: rotateX( 180deg );
 }
     </style>
   </head>
   <body>
-    Good Luck
+    <h1>Good Luck</h1>
 <div class="card">
   <div class="content">
     <div class="front">
-      Front
     </div>
     <div class="back">
-      Back!
     </div>
   </div>
 </div>

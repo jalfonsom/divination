@@ -64,10 +64,16 @@ Test #1A
 
   <script>
 function myFunction() {
-  <!--document.getElementById("demo").innerHTML = "YOU CLICKED ME!";-->
+    var img = document.createElement('img');
+    img.src = "../assets/plateFrontSprite.png";
+    document.body.appendChild(img);
+}
+  <!--
+function myFunction() {
+  document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
   var declaration = document.styleSheets[0].cssRules[0].style;
   var removedvalue = declaration.removeProperty("transform");
-}
+}//-->
 </script>
 </body>
 </html>

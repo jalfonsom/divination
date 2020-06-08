@@ -14,7 +14,8 @@ body {
   height: 2225.25px;
   margin: 0;
   float: left;
-  perspective: 1000px;
+  perspective: 0px;
+  transform: scale(0.75);
 }
 .content {
   position: absolute;
@@ -39,6 +40,7 @@ body {
   font-size: 60px;
   border-radius: 5px;
   backface-visibility: hidden;
+  transform: scale(0.75);
 }
 .back {
   position: absolute;
@@ -54,9 +56,11 @@ body {
   background: url("../assets/plateFrontSprite.png") 0 0;
   color: white;
   transform: rotateX( 180deg );
+  transform: scale(0.75);
 }
     </style>
   </head>
+  
   <body>
     <h1>Good Luck</h1>
 <div class="card">

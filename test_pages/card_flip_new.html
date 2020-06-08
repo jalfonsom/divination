@@ -10,9 +10,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 300px;
-  height: 300px;
-  margin: -150px;
+  width: 150px;
+  height: 200px;
+  margin: auto;
   float: left;
   perspective: 500px;
 }
@@ -28,11 +28,11 @@ body {
   transform: rotateY( 180deg ) ;
   transition: transform 0.5s;
 }
-.front, .back {
+.front {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  background: white;
+  height: 200px;
+  width: 150px;
+  background: url("../assets/plateBack.png") 0 149.85px;
   line-height: 300px;
   color: #03446A;
   text-align: center;
@@ -41,7 +41,17 @@ body {
   backface-visibility: hidden;
 }
 .back {
-  background: #03446A;
+  position: absolute;
+  height: 150px;
+  width: 200px;
+  background: white;
+  line-height: 300px;
+  color: #03446A;
+  text-align: center;
+  font-size: 60px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  background: url("../assets/plateFrontSprite.png") 0 0;
   color: white;
   transform: rotateY( 180deg );
 }
